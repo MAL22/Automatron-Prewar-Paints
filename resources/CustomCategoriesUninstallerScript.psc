@@ -1,0 +1,7 @@
+scriptname CustomCategoriesUninstallerScript extends ActiveMagicEffect
+
+CustomCategoriesInstallerScript property CustomCategoriesInstaller auto const
+
+Event onEffectStart(Actor akTarget, Actor akCaster)
+	CustomCategoriesInstaller.uninstall_manually()
+EndEvent
